@@ -1,0 +1,47 @@
+:root {
+  /**
+   * Colours.
+   */
+
+  --colour-1: #ffffff;
+  --colour-2: #191919;
+  --colour-3: #767676;
+  --colour-4: #e6e6e6;
+  --colour-5: #272b3b;
+  --colour-6: #dec38b;
+  --colour-7: #a8000b;
+
+  /**
+   * Widths.
+   */
+
+  --site-max-width: 1200px;
+
+  /**
+   * Spacing.
+   */
+
+  --spacing-unit: 24px;
+  --spacing-unit-tiny: 8px;
+  --spacing-unit-small: 16px;
+  --spacing-unit-large: 48px;
+  --spacing-unit-huge: 64px;
+
+  /**
+   * Typography.
+   */
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --base-line-height: 1.6;
+
+  --font-size-1: 44px;
+  --font-size-2: 38px;
+  --font-size-3: 32px;
+  --font-size-4: 26px;
+  --font-size-5: 22px;
+  --font-size-6: 18px;
+  --font-size-7: 15px;
+  --font-size-8: 12px;
+}

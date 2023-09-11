@@ -1,0 +1,110 @@
+/**
+ * Basic page-level setup.
+ *
+ * 1. Ensure the page always fills at least the entire height of the viewport.
+ * 3. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ */
+
+html {
+  box-sizing: border-box;
+  color: var(--colour-2);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-6);
+  font-size: clamp(var(--font-size-6), 2.5vw, var(--font-size-5));
+  line-height: var(--base-line-height);
+  letter-spacing: 0.025em;
+  min-height: 100%; /* [1] */
+  overflow-y: scroll; /* [2] */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--colour-1);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Establish sensible defaults for text elements.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0 0 var(--base-spacing-unit) 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: var(--font-size-2);
+  font-size: clamp(var(--font-size-3), 4.5vw, var(--font-size-1));
+}
+
+h2 {
+  font-size: var(--font-size-3);
+  font-size: clamp(var(--font-size-4), 4.5vw, var(--font-size-2));
+}
+
+h3 {
+  font-size: var(--font-size-4);
+  font-size: clamp(var(--font-size-5), 4.5vw, var(--font-size-3));
+}
+
+h4 {
+  font-size: var(--font-size-5);
+  font-size: clamp(var(--font-size-6), 4.5vw, var(--font-size-4));
+}
+
+h5 {
+  font-size: var(--font-size-6);
+  font-size: clamp(var(--font-size-7), 4.5vw, var(--font-size-5));
+}
+
+h6 {
+  font-size: var(--font-size-7);
+  font-size: clamp(var(--font-size-8), 4.5vw, var(--font-size-6));
+}
+
+/**
+ * Remove indenting and bullet styles from lists.
+ */
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove underline from links.
+ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
