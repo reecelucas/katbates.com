@@ -22,8 +22,9 @@
    */
 
   --spacing-unit: 24px;
-  --spacing-unit-tiny: 8px;
-  --spacing-unit-small: 16px;
+  --spacing-unit-tiny: 4px;
+  --spacing-unit-small: 8px;
+  --spacing-unit-medium: 16px;
   --spacing-unit-large: 48px;
   --spacing-unit-huge: 64px;
 
@@ -44,4 +45,10 @@
   --font-size-6: 18px;
   --font-size-7: 15px;
   --font-size-8: 12px;
+
+  /**
+   * Z-indexes.
+   */
+
+  --z-index-above: 1;
 }
