@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
 const year = new Date().getFullYear();
@@ -8,6 +9,8 @@ const urls = {
 	linkedin: "https://www.linkedin.com/in/kat-bates/",
 	email: "mailto:katbates7@gmail.com"
 }
+
+const projects = await getCollection('projects');
 ---
 
 <Layout>
@@ -31,6 +34,26 @@ const urls = {
 						Email
 					</a>
 				</li>
+			</ul>
+		</section>
+		<section class="spacing-huge">
+			<h2 class="spacing-base">Projects</h2>
+			<ul>
+				{projects.map(({ data }) => (
+					<li class="project-card">
+						<div class="project-meta">
+							<h3 class="h4">
+								{data.title}
+							</h3>
+							<ul>
+								{data.tags.map((tag) => <li>{tag}</li>)}
+							</ul>
+						</div>
+						<div class="project-image">
+							<img src={data.image} alt="" />
+						</div>
+					</li>
+				))}
 			</ul>
 		</section>
 	</main>
