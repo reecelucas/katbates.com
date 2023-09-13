@@ -58,7 +58,7 @@
       position: absolute;
       transform: scaleX(0);
       /* transform-origin: left center; */
-      transition: transform 0.4s ease;
+      transition: transform 0.3s ease;
       top: 100%;
       width: 100%;
     }

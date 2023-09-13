@@ -7,7 +7,8 @@ const year = new Date().getFullYear();
 const urls = {
 	github: "https://github.com/katbates",
 	linkedin: "https://www.linkedin.com/in/kat-bates/",
-	email: "mailto:katbates7@gmail.com"
+	email: "mailto:katbates7@gmail.com",
+	cv: "kat-bates-cv.pdf"
 }
 
 const projects = await getCollection('projects');
@@ -34,6 +35,11 @@ const projects = await getCollection('projects');
 						Email
 					</a>
 				</li>
+				<li>
+					<a href={urls.cv}>
+						Download CV
+					</a>
+				</li>
 			</ul>
 		</section>
 		<section class="spacing-huge">
@@ -58,7 +64,7 @@ const projects = await getCollection('projects');
 		</section>
 	</main>
 	<footer class="wrapper footer">
-		<span>&copy {year} Kat Bates</span>
+		<span>&copy; {year} Kat Bates</span>
 		<ul>
 			<li>
 				<a href={urls.github} aria-label="Kat's GitHub">
