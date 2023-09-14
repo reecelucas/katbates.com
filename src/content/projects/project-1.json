@@ -1,5 +1,6 @@
 {
   "title": "Project One",
+  "link": "https://www.google.com/",
   "tags": ["Python", "SQL", "Tableau"],
   "image": "/project-images/test-image.jpg"
 }

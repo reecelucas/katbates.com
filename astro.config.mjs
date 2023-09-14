@@ -8,6 +8,9 @@ export default defineConfig({
   outDir: "./dist",
   output: "static",
   trailingSlash: "ignore",
+  build: {
+    inlineStylesheets: "always",
+  },
   server: {
     port: parseInt(process.env.PORT || "3000"),
   },
