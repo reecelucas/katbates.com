@@ -46,7 +46,11 @@ const projects = await getCollection('projects');
 			<h2 class="spacing-base">Projects</h2>
 			<ul>
 				{projects.map(({ data }) => (
-					<li class="project-card">
+					<li
+						class="project-card"
+						data-theme={data.theme.highContrast ? 'high-contrast' : null}
+						style={`--project-card-bg: ${data.theme.backgroundColor}`}
+					>
 						<div class="project-meta">
 							<h3 class="h4">
 								<a href={data.link}>

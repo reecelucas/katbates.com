@@ -2,5 +2,9 @@
   "title": "Project One",
   "link": "https://www.google.com/",
   "tags": ["Python", "SQL", "Tableau"],
-  "image": "/project-images/test-image.jpg"
+  "image": "/project-images/test-image.jpg",
+  "theme": {
+    "backgroundColor": "#6c29f5",
+    "highContrast": true
+  }
 }

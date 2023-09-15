@@ -2,5 +2,8 @@
   "title": "Project Two",
   "link": "https://www.google.com/",
   "tags": ["R", "Notebook"],
-  "image": "/project-images/test-image.jpg"
+  "image": "/project-images/test-image.jpg",
+  "theme": {
+    "backgroundColor": "#fac8c4"
+  }
 }

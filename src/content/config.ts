@@ -7,6 +7,10 @@ const projectsCollection = defineCollection({
     link: z.string(),
     tags: z.array(z.string()),
     image: z.string(),
+    theme: z.object({
+      backgroundColor: z.string().length(7).startsWith("#"), // Colour hex, E.g. #6c29f5
+      highContrast: z.boolean().optional(),
+    }),
   }),
 });
 
