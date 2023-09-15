@@ -79,21 +79,25 @@
   padding: var(--spacing-unit-medium);
   position: relative;
 
-  a::after {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
   &[data-theme="high-contrast"] {
     color: var(--colour-1);
   }
 
   &:not(:last-of-type) {
     margin-bottom: var(--spacing-unit-medium);
+  }
+
+  @media (hover: hover) {
+    transition: transform 0.3s ease;
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.025);
+
+      @media (prefers-reduced-motion) {
+        transform: none;
+      }
+    }
   }
 
   @media (--md-viewport) {
@@ -111,6 +115,15 @@
 .project-meta {
   color: currentColor;
   flex-shrink: 0;
+
+  a::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   ul {
     display: flex;
