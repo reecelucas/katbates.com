@@ -146,6 +146,7 @@
   border-radius: inherit;
   display: flex;
   margin-bottom: var(--spacing-unit);
+  overflow: hidden;
   padding: var(--spacing-unit-medium);
 
   img {
