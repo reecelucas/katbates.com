@@ -62,7 +62,13 @@ const projects = await getCollection('projects');
 							</ul>
 						</div>
 						<div class="project-image">
-							<img src={data.image} alt="" />
+							<img
+								src={data.image.src}
+								height={data.image.height}
+								width={data.image.width}
+								loading={data.image.lazy ? "lazy" : null}
+								alt=""
+							/>
 						</div>
 					</li>
 				))}

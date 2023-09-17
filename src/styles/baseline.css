@@ -107,6 +107,6 @@ a {
  */
 
 img {
-  block-size: auto;
+  height: auto;
   max-width: 100%;
 }
