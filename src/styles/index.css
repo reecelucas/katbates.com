@@ -163,17 +163,24 @@
   display: flex;
   font-size: smaller;
   justify-content: space-between;
+  padding-bottom: var(--spacing-unit);
 
   ul {
     align-items: center;
     display: flex;
-    gap: var(--spacing-unit-small);
+    gap: var(--spacing-unit-tiny);
     line-height: 1;
   }
 
   a {
-    display: inline-block;
+    --icon-link-size: 44px;
+
+    align-items: center;
+    display: inline-flex;
+    height: var(--icon-link-size);
+    justify-content: center;
     transition: color 0.3s ease;
+    width: var(--icon-link-size);
 
     &:hover {
       color: var(--colour-6);
