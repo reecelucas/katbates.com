@@ -37,28 +37,30 @@ const projects = await getCollection('projects');
     <section class="spacing-huge">
       <h2 class="spacing-base">Projects</h2>
       <ul>
-        {projects.map(({ data }) => (
+        {projects.map(({ data: { title, link, tags, images, theme } }) => (
           <li
             class="project-card"
-            data-theme={data.theme.highContrast ? "high-contrast" : null}
-            style={`--project-card-bg: ${data.theme.backgroundColor}`}
+            data-theme={theme.highContrast ? "high-contrast" : null}
+            style={`--project-card-bg: ${theme.backgroundColor}`}
           >
             <div class="project-meta">
               <h3 class="h4">
-                <a href={data.link}>{data.title}</a>
+                <a href={link}>{title}</a>
               </h3>
               <ul>
-                {data.tags.map((tag) => (
+                {tags.map((tag) => (
                   <li>{tag}</li>
                 ))}
               </ul>
             </div>
             <div class="project-image">
               <img
-                src={data.image.src}
-                height={data.image.height}
-                width={data.image.width}
-                loading={data.image.lazy ? "lazy" : null}
+                srcset={`${images.small.src} ${images.small.width}w, ${images.large.src} ${images.large.width}w`}
+                sizes="(max-width: 500px) 80vw, 600px"
+                src={images.large.src}
+                height={images.large.height}
+                width={images.large.width}
+                loading={images.lazy ? "lazy" : null}
                 alt=""
               />
             </div>

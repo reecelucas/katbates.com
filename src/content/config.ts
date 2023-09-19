@@ -1,15 +1,20 @@
 import { z, defineCollection } from "astro:content";
 
+const imageSchema = z.object({
+  src: z.string(),
+  height: z.number(),
+  width: z.number(),
+});
+
 const projectsCollection = defineCollection({
   type: "data",
   schema: z.object({
     title: z.string(),
     link: z.string(),
     tags: z.array(z.string()),
-    image: z.object({
-      src: z.string(),
-      height: z.number(),
-      width: z.number(),
+    images: z.object({
+      small: imageSchema,
+      large: imageSchema,
       lazy: z.boolean().optional(),
     }),
     theme: z.object({

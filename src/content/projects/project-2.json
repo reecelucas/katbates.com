@@ -2,10 +2,17 @@
   "title": "Project Two",
   "link": "https://www.google.com/",
   "tags": ["R", "Notebook"],
-  "image": {
-    "src": "/project-images/test-image.jpg",
-    "height": 400,
-    "width": 600,
+  "images": {
+    "small": {
+      "src": "/project-images/test-image-400w.jpg",
+      "height": 267,
+      "width": 400
+    },
+    "large": {
+      "src": "/project-images/test-image-600w.jpg",
+      "height": 400,
+      "width": 600
+    },
     "lazy": true
   },
   "theme": {
