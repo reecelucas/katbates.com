@@ -4,7 +4,7 @@
 
 html {
   box-sizing: border-box;
-  color: var(--colour-2);
+  color: var(--colour-blue-950);
   font-family: var(--font-sans);
   font-size: var(--font-size-6);
   font-size: clamp(var(--font-size-6), 2.5vw, var(--font-size-5));
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-color: var(--colour-1);
+  background-color: var(--colour-white);
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
