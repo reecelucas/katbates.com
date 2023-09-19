@@ -70,6 +70,12 @@
           transform: translateY(0);
         }
       }
+
+      &:focus-visible {
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
