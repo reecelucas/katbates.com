@@ -75,6 +75,11 @@ h6 {
   font-size: clamp(var(--font-size-8), 4.5vw, var(--font-size-6));
 }
 
+::selection {
+  background-color: var(--color-pink-500);
+  color: var(--color-blue-950);
+}
+
 /**
  * Remove indenting and bullet styles from lists.
  */
