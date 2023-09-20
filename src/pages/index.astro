@@ -17,8 +17,8 @@ const projects = await getCollection('projects');
 <Layout>
   <main class="wrapper">
     <section class="intro">
-      <h1>Kat Bates</h1>
-      <p>Aspiring Data Analyst</p>
+      <h1 class="h2">Kat Bates</h1>
+      <h2 class="h5">Aspiring Data Analyst</h2>
       <ul>
         <li>
           <a href={urls.github}>GitHub</a>
@@ -35,7 +35,7 @@ const projects = await getCollection('projects');
       </ul>
     </section>
     <section>
-      <h2 class="gap-large">Projects</h2>
+      <h2 class="h3 gap-large">Projects</h2>
       <ul class="projects">
         {projects.map(({ data: { title, link, tags, images, theme } }) => (
           <li

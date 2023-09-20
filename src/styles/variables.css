@@ -42,7 +42,7 @@
    */
 
   --gap: 24px;
-  --fluid-gap: clamp(12px, 2.5vw, 24px);
+  --fluid-gap: clamp(16px, 2.5vw, 24px);
 
   /**
    * Typography.
@@ -53,12 +53,12 @@
 
   --base-line-height: 1.6;
 
-  --font-size-1: 44px;
-  --font-size-2: 38px;
-  --font-size-3: 32px;
-  --font-size-4: 26px;
-  --font-size-5: 22px;
-  --font-size-6: 18px;
-  --font-size-7: 15px;
-  --font-size-8: 12px;
+  /* https://www.fluid-type-scale.com */
+  --font-size-sm: clamp(16px, 0.16vw + 15.67px, 18px);
+  --font-size-base: clamp(18px, 0.21vw + 17.33px, 20px);
+  --font-size-md: clamp(21.6px, 0.35vw + 20.47px, 25px);
+  --font-size-lg: clamp(25.92px, 0.56vw + 24.14px, 31.25px);
+  --font-size-xl: clamp(31.1px, 0.83vw + 28.45px, 39.06px);
+  --font-size-xxl: clamp(37.32px, 1.2vw + 33.49px, 48.83px);
+  --font-size-xxxl: clamp(44.79px, 1.69vw + 39.37px, 61.04px);
 }
