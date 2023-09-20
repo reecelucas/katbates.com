@@ -34,9 +34,9 @@ const projects = await getCollection('projects');
         </li>
       </ul>
     </section>
-    <section class="spacing-huge">
-      <h2 class="spacing-large">Projects</h2>
-      <ul>
+    <section class="gap-huge">
+      <h2 class="gap-large">Projects</h2>
+      <ul class="projects">
         {projects.map(({ data: { title, link, tags, images, theme } }) => (
           <li
             class="project-card"
@@ -44,7 +44,7 @@ const projects = await getCollection('projects');
             style={`--project-card-bg: ${theme.backgroundColor}`}
           >
             <div class="project-meta">
-              <h3 class="h4">
+              <h3 class="h4 gap-tiny">
                 <a href={link}>{title}</a>
               </h3>
               <ul>

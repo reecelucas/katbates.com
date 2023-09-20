@@ -6,8 +6,8 @@
   display: block;
   margin: 0 auto;
   max-width: var(--site-max-width);
-  padding: 0 var(--spacing-unit-small);
-  padding: 0 clamp(var(--spacing-unit-small), 2.5vw, var(--spacing-unit));
+  padding: 0 var(--gap-small);
+  padding: 0 clamp(var(--gap-small), 2.5vw, var(--gap));
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 80vh;
-  padding: var(--spacing-unit) 0;
+  padding: var(--gap) 0;
 
   h1 {
     letter-spacing: 0.025em;
@@ -24,35 +24,35 @@
 
   p {
     align-items: center;
-    color: var(--colour-blue-700);
+    color: var(--color-blue-700);
     display: flex;
-    margin-bottom: var(--spacing-unit-large);
+    margin-bottom: var(--gap-large);
 
     &::before {
-      background-color: var(--colour-pink-500);
+      background-color: var(--color-pink-500);
       border-radius: 4px;
       content: "";
       display: inline-block;
       height: 2px;
-      margin-right: var(--spacing-unit-small);
+      margin-right: var(--gap-small);
       width: 4ch;
     }
   }
 
   ul {
-    color: var(--colour-blue-600);
+    color: var(--color-blue-600);
     display: flex;
     font-size: smaller;
-    gap: var(--spacing-unit);
+    gap: var(--gap);
   }
 
   a {
     @media (hover: hover) {
-      padding-bottom: var(--spacing-unit-tiny);
+      padding-bottom: var(--gap-tiny);
       position: relative;
 
       &::after {
-        background-color: var(--colour-blue-200);
+        background-color: var(--color-blue-200);
         content: "";
         height: 2px;
         left: 0;
@@ -80,31 +80,30 @@
   }
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
 .project-card {
   background-color: var(--project-card-bg);
   border-radius: 6px;
   display: flex;
   flex-direction: column-reverse;
-  padding: var(--spacing-unit-medium);
+  gap: var(--gap);
+  padding: var(--gap-medium);
   position: relative;
 
   &[data-theme="high-contrast"] {
-    color: var(--colour-white);
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: var(--spacing-unit-medium);
+    color: var(--color-white);
   }
 
   @media (--md-viewport) {
     align-items: end;
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--spacing-unit);
-
-    &:not(:last-of-type) {
-      margin-bottom: var(--spacing-unit);
-    }
+    padding: var(--gap);
   }
 
   @media (hover: hover) {
@@ -141,29 +140,23 @@
 
   li:not(:last-of-type)::after {
     content: "•";
-    margin: 0 var(--spacing-unit-small);
+    margin: 0 var(--gap-small);
   }
 
   @media (--md-viewport) {
     flex-basis: 30%;
-    margin-right: var(--spacing-unit);
   }
 }
 
 .project-image {
-  background-color: var(--colour-white);
+  background-color: var(--color-white);
   border-radius: inherit;
   display: flex;
-  margin-bottom: var(--spacing-unit);
   overflow: hidden;
-  padding: var(--spacing-unit-medium);
+  padding: var(--gap-medium);
 
   img {
     border-radius: inherit;
-  }
-
-  @media (--md-viewport) {
-    margin-bottom: 0;
   }
 }
 
@@ -172,12 +165,12 @@
   display: flex;
   font-size: smaller;
   justify-content: space-between;
-  padding-bottom: var(--spacing-unit);
+  padding-bottom: var(--gap);
 
   ul {
     align-items: center;
     display: flex;
-    gap: var(--spacing-unit-tiny);
+    gap: var(--gap-tiny);
     line-height: 1;
   }
 
@@ -195,7 +188,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: var(--colour-blue-100);
+        background-color: var(--color-blue-100);
       }
     }
   }
@@ -239,22 +232,22 @@
  * Spacing utilities.
  */
 
-.spacing-tiny {
-  margin-bottom: var(--spacing-unit-tiny);
+.gap-tiny {
+  margin-bottom: var(--gap-tiny);
 }
 
-.spacing-small {
-  margin-bottom: var(--spacing-unit-small);
+.gap-small {
+  margin-bottom: var(--gap-small);
 }
 
-.spacing-base {
-  margin-bottom: var(--spacing-unit);
+.gap-base {
+  margin-bottom: var(--gap);
 }
 
-.spacing-large {
-  margin-bottom: var(--spacing-unit-large);
+.gap-large {
+  margin-bottom: var(--gap-large);
 }
 
-.spacing-huge {
-  margin-bottom: var(--spacing-unit-huge);
+.gap-huge {
+  margin-bottom: var(--gap-huge);
 }
