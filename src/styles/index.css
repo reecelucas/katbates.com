@@ -17,10 +17,6 @@
   min-height: 80vh;
   padding: var(--gap) 0;
 
-  h1 {
-    letter-spacing: 0.025em;
-  }
-
   p {
     align-items: center;
     color: var(--color-blue-700);
@@ -31,7 +27,6 @@
       background-color: var(--color-pink-500);
       border-radius: 4px;
       content: "";
-      display: inline-block;
       height: 2px;
       margin-right: calc(var(--gap) / 2);
       width: 4ch;
@@ -98,12 +93,6 @@
     color: var(--color-white);
   }
 
-  @media (--md-viewport) {
-    align-items: end;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   @media (hover: hover) {
     transition: transform 200ms ease;
     will-change: transform;
@@ -115,6 +104,12 @@
         transform: none;
       }
     }
+  }
+
+  @media (--md-viewport) {
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
