@@ -161,10 +161,14 @@
 }
 
 .footer {
+  --fluid-footer-gap: clamp(60px, 7.5vw, 120px);
+
   align-items: center;
   display: flex;
   font-size: smaller;
   justify-content: space-between;
+  padding-top: 60px;
+  padding-top: var(--fluid-footer-gap);
   padding-bottom: var(--gap);
 
   ul {
