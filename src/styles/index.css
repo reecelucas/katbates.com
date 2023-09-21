@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 75vh;
   padding: var(--gap) 0;
 
   h2 {
@@ -95,7 +95,7 @@
   }
 
   @media (hover: hover) {
-    transition: transform 200ms ease;
+    transition: transform 350ms ease;
     will-change: transform;
 
     &:hover {
