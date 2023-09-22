@@ -1,22 +1,21 @@
 {
-  "title": "Project One",
-  "link": "https://www.google.com/",
-  "tags": ["Python", "SQL", "Tableau"],
+  "title": "LDN Bikes",
+  "link": "https://github.com/katbates/london-bicycles",
+  "tags": ["SQL", "Tableau"],
   "images": {
     "small": {
-      "src": "/project-images/test-image-400w.jpg",
-      "height": 267,
-      "width": 400
-    },
-    "large": {
-      "src": "/project-images/test-image-600w.jpg",
+      "src": "/project-images/london-bikes-600w.webp",
       "height": 400,
       "width": 600
+    },
+    "large": {
+      "src": "/project-images/london-bikes-1200w.webp",
+      "height": 800,
+      "width": 1200
     },
     "lazy": false
   },
   "theme": {
-    "backgroundColor": "#6c29f5",
-    "highContrast": true
+    "backgroundColor": "#b3dcd6"
   }
 }

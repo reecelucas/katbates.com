@@ -1,17 +1,17 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
 
 const year = new Date().getFullYear();
 
 const urls = {
-	github: "https://github.com/katbates",
-	linkedin: "https://www.linkedin.com/in/kat-bates/",
-	email: "mailto:katbates7@gmail.com",
-	cv: "kat-bates-cv.pdf"
-}
+  github: "https://github.com/katbates",
+  linkedin: "https://www.linkedin.com/in/kat-bates/",
+  email: "mailto:katbates7@gmail.com",
+  cv: "kat-bates-cv.pdf",
+};
 
-const projects = await getCollection('projects');
+const projects = await getCollection("projects");
 ---
 
 <Layout>

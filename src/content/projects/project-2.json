@@ -1,21 +1,22 @@
 {
-  "title": "Project Two",
-  "link": "https://www.google.com/",
-  "tags": ["R", "Notebook"],
+  "title": "Airbnb Listings",
+  "link": "https://github.com/katbates/airbnb",
+  "tags": ["Tableau"],
   "images": {
     "small": {
-      "src": "/project-images/test-image-400w.jpg",
-      "height": 267,
-      "width": 400
-    },
-    "large": {
-      "src": "/project-images/test-image-600w.jpg",
+      "src": "/project-images/airbnb-600w.webp",
       "height": 400,
       "width": 600
+    },
+    "large": {
+      "src": "/project-images/airbnb-1200w.webp",
+      "height": 800,
+      "width": 1200
     },
     "lazy": true
   },
   "theme": {
-    "backgroundColor": "#fac8c4"
+    "backgroundColor": "#3a3f52",
+    "highContrast": true
   }
 }

@@ -1,5 +1,5 @@
 ---
-import '../styles/index.css'
+import "../styles/index.css";
 
 interface Props {
   title?: string;
@@ -8,11 +8,13 @@ interface Props {
 
 const {
   title = "Kat Bates | Aspiring Data Analyst",
-  description = "I'm a former teacher looking for my first data analyst role.",
+  description = "The portfolio of Kat Bates, aspiring data analyst based in London",
 } = Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site)
-canonicalUrl.pathname = canonicalUrl.pathname.replace(/\/$/, '') // Strip slash from the end of the path
+const socialImagePath = "/og-image.jpg";
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+canonicalUrl.pathname = canonicalUrl.pathname.replace(/\/$/, ""); // Strip slash from the end of the path
 ---
 
 <!doctype html>
@@ -33,13 +35,13 @@ canonicalUrl.pathname = canonicalUrl.pathname.replace(/\/$/, '') // Strip slash 
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="og:image" content={socialImagePath} />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:image" content={socialImagePath} />
   
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
