@@ -53,7 +53,9 @@
 
   --base-line-height: 1.6;
 
-  /* https://www.fluid-type-scale.com */
+  /**
+   * Type scale: https://www.fluid-type-scale.com.
+   */
   --font-size-sm: clamp(16px, 0.16vw + 15.67px, 18px);
   --font-size-base: clamp(18px, 0.21vw + 17.33px, 20px);
   --font-size-md: clamp(21.6px, 0.35vw + 20.47px, 25px);

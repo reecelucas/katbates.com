@@ -143,15 +143,23 @@
 }
 
 .project-image {
+  --project-image-padding: calc(var(--fluid-gap) / 1.5);
+
   background-color: var(--color-white);
   border-radius: inherit;
   display: flex;
   overflow: hidden;
-  padding: calc(var(--fluid-gap) / 1.5);
+  padding: var(--project-image-padding);
 
   img {
     border-radius: inherit;
-    max-width: 600px;
+  }
+
+  @media (--md-viewport) {
+    /**
+     * Set `max-width` of the container to result in an `img` `max-width` of `600px`.
+     */
+    max-width: calc(600px + (var(--project-image-padding) * 2));
   }
 }
 
