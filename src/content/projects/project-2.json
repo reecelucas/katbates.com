@@ -13,6 +13,7 @@
       "height": 800,
       "width": 1200
     },
+    "alt": "A dashboard titled 'Pricing your Airbnb' with a sidebar on the left, and a map on the right. The sidebar includes various form inputs that allow a user to specify London borough, room type and length of stay. The map includes markers showing the location of Airbnb rental properties that match the users' criteria.",
     "lazy": true
   },
   "theme": {

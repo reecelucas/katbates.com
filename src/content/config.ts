@@ -15,6 +15,7 @@ const projectsCollection = defineCollection({
     images: z.object({
       small: imageSchema,
       large: imageSchema,
+      alt: z.string(),
       lazy: z.boolean().optional(),
     }),
     theme: z.object({

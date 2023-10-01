@@ -61,7 +61,7 @@ const projects = await getCollection("projects");
                 height={images.large.height}
                 width={images.large.width}
                 loading={images.lazy ? "lazy" : null}
-                alt=""
+                alt={images.alt}
               />
             </div>
           </li>
